@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "unused-imports"],
+  "rules": {
+    "max-len": [0, 220, 2, { "ignoreUrls": true }]
+  }
+}
